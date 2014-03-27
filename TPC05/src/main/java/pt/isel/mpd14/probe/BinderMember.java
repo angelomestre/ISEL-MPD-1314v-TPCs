@@ -25,6 +25,6 @@ import java.lang.reflect.InvocationTargetException;
  */
 public interface BinderMember {
     
-    public boolean bind(Object target, String key, Object v) throws IllegalAccessException, InvocationTargetException;
+    public <T> boolean bind(T target, String key, Object v) throws IllegalAccessException, InvocationTargetException;
             
 }
